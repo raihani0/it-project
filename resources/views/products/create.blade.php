@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Add New Products - SantriKoding.com</title>
+    <title>Tambah Bantuan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body style="background: lightgray">
@@ -32,7 +32,7 @@
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">TITLE</label>
-                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}" placeholder="Masukkan Judul Product">
+                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}" placeholder="Masukkan Nama Bantuan">
                             
                                 <!-- error message untuk title -->
                                 @error('title')
@@ -44,7 +44,7 @@
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">DESCRIPTION</label>
-                                <textarea class="form-control @error('description') is-invalid @enderror" name="description" rows="5" placeholder="Masukkan Description Product">{{ old('description') }}</textarea>
+                                <textarea class="form-control @error('description') is-invalid @enderror" name="description" rows="5" placeholder="Masukkan Description Bantuan">{{ old('description') }}</textarea>
                             
                                 <!-- error message untuk description -->
                                 @error('description')
@@ -71,7 +71,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group mb-3">
                                         <label class="font-weight-bold">STOCK</label>
-                                        <input type="number" class="form-control @error('stock') is-invalid @enderror" name="stock" value="{{ old('stock') }}" placeholder="Masukkan Stock Product">
+                                        <input type="number" class="form-control @error('stock') is-invalid @enderror" name="stock" value="{{ old('stock') }}" placeholder="Masukkan Stock Bantuan">
                                     
                                         <!-- error message untuk stock -->
                                         @error('stock')
